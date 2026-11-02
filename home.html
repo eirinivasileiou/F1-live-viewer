@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formula 1 Live Viewer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>FORMULA 1 LIVE VIEWER</h1>
+        <p>Interactive Race Experience</p>
+    </header>
+
+    <main>
+        <section class="video-section">
+
+            <div class="video-container">
+                <video
+                    id="driver-video"
+                    controls
+                    muted
+                    playsinline
+                    preload="metadata"
+                    loop
+                >
+                    Your browser does not support video playback.
+            </div>
+
+        </section>
+
+        <section class="driver-info">
+
+            <h2 id="driver-name">Lando Norris</h2>
+
+            <div class="stats">
+
+                <div class="stat">
+                    <span>Position</span>
+                    <strong id="position">1</strong>
+                </div>
+
+                <div class="stat">
+                    <span>Speed</span>
+                    <strong id="speed">312 km/h</strong>
+                </div>
+
+                <div class="stat">
+                    <span>Lap</span>
+                    <strong id="lap">42</strong>
+                </div>
+
+                <div class="stat">
+                    <span>Sector</span>
+                    <strong id="sector">2</strong>
+                </div>
+
+                <div class="stat">
+                    <span>Gap</span>
+                    <strong id="gap">+0.000s</strong>
+                </div>
+
+                <div class="stat">
+                    <span>Tyre</span>
+                    <strong id="tyre">MEDIUM</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="drivers">
+
+            <h2>Select Driver</h2>
+
+            <div class="driver-buttons">
+
+                <button onclick="selectDriver('NOR')">
+                    NOR
+                </button>
+
+                <button onclick="selectDriver('LEC')">
+                    LEC
+                </button>
+
+                <button onclick="selectDriver('SAI')">
+                    SAI
+                </button>
+
+                <button onclick="selectDriver('VER')">
+                    VER
+                </button>
+
+                <button onclick="selectDriver('RIC')">
+                    RIC
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
